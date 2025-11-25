@@ -26,7 +26,6 @@ coverage/
 *.lcov
 
 # Build output
-dist/
 build/
 .tmp/
 
