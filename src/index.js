@@ -578,11 +578,7 @@ io.on("connection", (socket) => {
 });
 
 // Start server
-if (process.env.NODE_ENV !== "vercel") {
-  const PORT = process.env.PORT;
-  server.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-  });
-}
-
-export default server;
+const PORT = process.env.PORT;
+server.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
